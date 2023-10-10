@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Triostar Stromanthe",
+      "image": "https://www.mydomaine.com/thmb/0W_BQuz_Zw6Ae1bXWBmSZyotX_A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-949765216-bd2887d76ad04461949e8093d18093e9.jpg",
+      "price": 12,
+      "id": 8
+    },
+    {
+      "name": "Prayer Plant",
+      "image": "https://www.mydomaine.com/thmb/g1cau39ODW5p-f5Vw2tkuSvtIe8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1253606452-a77718af229e4efb8e908bbeea926085.jpg",
+      "price": 18,
+      "id": 9
     }
   ]
 }
