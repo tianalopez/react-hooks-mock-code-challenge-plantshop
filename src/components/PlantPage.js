@@ -4,8 +4,9 @@ import PlantList from "./PlantList";
 import Search from "./Search";
 
 function PlantPage() {
-  const [plants, setPlants] = useState([])
-  const [search, setSearch] = useState("")
+  const [plants, setPlants] = useState([]);
+  const [search, setSearch] = useState("");
+  const [plantID, setPlantID] = useState("")
 
   //fetch plant data
   useEffect(() => {
@@ -29,12 +30,20 @@ function PlantPage() {
     const upperCasePlant = plant.name.toUpperCase()
     return upperCasePlant.includes(search)
   })
+  .filter((plant) => (
+    plant.id !== plantID
+  ))
+
+  //delete plants
+  const onDelete = (id) => {
+    setPlantID((newID) => id)
+  }
 
   return (
     <main>
       <NewPlantForm onSubmit={onSubmit} />
       <Search onSearch={onSearch}/>
-      <PlantList plants={visiblePlants} />
+      <PlantList plants={visiblePlants} onDelete={onDelete}/>
     </main>
   );
 }
